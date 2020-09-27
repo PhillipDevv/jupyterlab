@@ -1,0 +1,35 @@
+setup_farm()
+agent.give("wheat seeds", 64, 1)
+
+def five():
+    for count in range (5):
+    #Edit the line above to repeat 6 times instead of 2 times.
+        agent.move("forward")
+        agent.till("down")
+        if agent.inspect("down") == "air":
+            say("Found air!")
+            agent.place(1, "down")
+        agent.move("down")
+        if agent.inspect("down") == "wheat":
+            agent
+        agent.move("up")
+        
+def two():
+    for count in range (2):
+        agent.move("forward")
+        agent.till("down")
+        agent.place(1, "down")
+
+while True:
+    five()
+    agent.turn("right")
+    two()
+    agent.turn("right")
+    five()
+    agent.turn("right")
+    two()
+    agent.turn("right")
+
+
+
+    
